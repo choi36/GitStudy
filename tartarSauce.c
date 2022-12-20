@@ -35,6 +35,12 @@ int main() {
 		printf("[%d/10] %d %c %d = ", score, a, yeonsanjaDisplay, b);
 		scanf("%d", &answer);
 
-		
+		if (answer == correct) {
+			printf("Correct!\n");
+			score++;
+		}
+		else {
+			printf("Wrong! Answer is %d.\n", correct);
+		}
 	}
 }
